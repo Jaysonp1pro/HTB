@@ -423,13 +423,81 @@ input, select, textarea {
 			background-size: auto,							cover,							cover;
 			overflow: hidden;
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 5vmin;
 		}
 
 		.main.style2 iframe {
 			border-radius: 14px;
-
-			
 		}
+
+		.infoGroup + .infoGroup {
+			margin-top: 1.25rem;
+		}
+
+		.infoGroup p {
+			margin: 0;
+		}
+
+/* Location Section  */
+	#map-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10em;
+		row-gap: 2em;
+		flex-wrap: wrap;
+	}
+
+	#map-container-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		gap: 1em;
+	}
+
+	#locationHours {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		width: 60%;
+		height: 60%;
+		position: relative;
+		display: inline-block;
+	}
+
+	#locationHours img {
+		display: block;
+		border-radius: 14px;
+		width: 100%;
+		height: auto;
+		filter: brightness(0.75);
+	}
+
+	#locationHours b {
+		position: absolute;
+		color: white;
+		font: inherit;
+		font-weight: bold;
+		font-size: 4vmin;
+		line-height: 1.25em;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
 
 /* Header */
 
@@ -854,6 +922,10 @@ input, select, textarea {
 
 			.main {
 				padding: 5em 3em 3em 3em ;
+			}
+
+			#locationHours {
+				width: 90%;
 			}
 
 		/* Header */
