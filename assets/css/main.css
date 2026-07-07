@@ -661,7 +661,7 @@ input, select, textarea {
 		background-image: url("../../images/HEADER_TRUCK.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
