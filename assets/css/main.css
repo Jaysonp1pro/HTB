@@ -511,7 +511,8 @@ input, select, textarea {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 4em;
+	gap: 1.75em;
+	padding-top: 5vh;
 	padding-bottom: 0;
 }
 
